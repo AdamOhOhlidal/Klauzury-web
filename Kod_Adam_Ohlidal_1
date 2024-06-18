@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klauzury</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #333;
+            color: #fff;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 40px;
+            text-align: center;
+            border-top: 20px solid #555;
+            border-bottom: 20px solid #555;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            column-gap: 20px;
+            padding: 20px;
+        }
+        .photo {
+            background: #fff;
+            border: 16px solid #555;
+            border-bottom: 40px solid #555;
+            border-top: 40px solid #555;
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+        }
+        .photo::before, .photo::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 16px;
+            background: #333;
+            top: 0;
+            left: 0;
+        }
+        .photo::after {
+            top: auto;
+            bottom: 0;
+        }
+        .photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .photo:hover img {
+            transform: scale(1.05);
+        }
+        .description {
+            padding: 15px;
+            text-align: center;
+            background: #444;
+            color: #fff;
+            font-size: 16px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            border-top: 20px solid #555;
+            border-bottom: 20px solid #555;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none; 
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .fa {
+            font-size: 24px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <i class="fas fa-camera camera-icon"></i>
+        <h1>Klauzurní práce 1. ročník Mediální tvorby</h1>
+		<h3>Adam Ohlídal</h3>
+		<p>Šikin jako šikovná</p>
+		<p>Když jsem byl malý, divil jsem se, proč moje máma s tátou někdy oslovují babičku „Šikine“. Naši mi řekli, že jméno vzniklo, když byla moje mamka malá, tak se svým bráchou říkali, že jejich maminka je šikovná. Používalo se to tolik, že časem šikovná zkrátili na Šikin a dnes už tak babičce říká skoro celá rodina.</p>
+		<p>Pracovala jako ekonomka, ale aby se mohla starat o svou tetu a maminku, odešla do předčasného důchodu. Teta měla Alzheimerovu chorobu, prababička měla vážně nemocné srdce a opustila nás letos na Velikonoce.</p>
+		<p>Babička žije dlouhá léta bez partnera a její psí společnice Bella umřela jen pár dní před babičkou. Za posledních pět let neměla ani chvíli pro sebe, neúnavně pečovala o ostatní a tyto ztráty blízkých ji dostaly na úplné psychicky na dno.</p>
+		<p>Sama se starala o dům a velkou zahradu, ale bohužel bydlela až v Klimkovicích a nemohly jsme za ní jezdit tak často, jak by bylo potřeba. Přesto jsme se snažily přijet, jak jen to okolnosti dovolily, protože na starém domě je práce na tři životy, jak babička říkala.</p>
+		<p>Babička tu byla vždycky i pro mě. S povzbuzením, když se mi nedařilo, s nadšením, když se mi cokoliv povedlo, s podporou pro všechny moje plány a s důvěrou, když jsem si ani já sám v něčem nevěřil.</p>
+		<p>Potvrzuju, byl to Šikin.</p>
+
+    </header>
+    <div class="gallery">
+        <div class="photo">
+            <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbVmlnwUSO0rTaUcnpor4JycGOaHtRwEK_pttiePZzhR5DnhcC7ZsaUUYOZjiHVJ0nZ_aFtBCEctPZ_XNDpLe5qIPbAFkxH9x8=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbVmlnwUSO0rTaUcnpor4JycGOaHtRwEK_pttiePZzhR5DnhcC7ZsaUUYOZjiHVJ0nZ_aFtBCEctPZ_XNDpLe5qIPbAFkxH9x8=s1600-rw-v1" alt="Objetí ze srdce" /> </a>
+            <div class="description">Objetí ze srdce</div>
+        </div>
+        <div class="photo">
+       
+       
+        <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYcI3m47BkNwi2RBmYXm_RxJz14so4y8ispsyQMkavNUPxtbD5H9HILFNDaI5R606CjyMKTNGP3sKxv54uch4JLXedUMM8H6n8=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYcI3m47BkNwi2RBmYXm_RxJz14so4y8ispsyQMkavNUPxtbD5H9HILFNDaI5R606CjyMKTNGP3sKxv54uch4JLXedUMM8H6n8=s1600-rw-v1"  alt="Ranní rutina ve skleníku"/> </a>
+       
+     
+            <div class="description">Ranní rutina ve skleníku</div>
+        </div>
+        <div class="photo">
+           
+            <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYkOmytvbrnhoPEV9WyTpXR5IMDAlYxJ9b-_3weiANyINrncZen_BiLRy9nrUAPmghaHk32WygdnrbBl8JZMjNgd1sCgmAJMuc=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYkOmytvbrnhoPEV9WyTpXR5IMDAlYxJ9b-_3weiANyINrncZen_BiLRy9nrUAPmghaHk32WygdnrbBl8JZMjNgd1sCgmAJMuc=s1600-rw-v1" alt="Bolavá záda" /> </a>
+           
+
+            <div class="description">Bolavá záda</div>
+        </div>
+        <div class="photo">
+       
+        <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihapN69jx-bkn-0flxQ3TT0KxzeyA-hz1zCnQdjSb-dhHyc-GeGYqyWAb-BJwr5xZfum9ZP1y6wbmUHJv5M7AOFkHvmGteK86cg=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihapN69jx-bkn-0flxQ3TT0KxzeyA-hz1zCnQdjSb-dhHyc-GeGYqyWAb-BJwr5xZfum9ZP1y6wbmUHJv5M7AOFkHvmGteK86cg=s1600-rw-v1" alt="Nakrmení hladovců"/> </a>
+       
+            <div class="description">Nakrmení hladovců</div>
+        </div>
+        <div class="photo">
+           
+            <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ4jSyxuG15eGiD7ls3Jlqzrv9lFs-gY1Sgve6kGX19tqOuQOviOkkAAgugQEogd0513_ssKhG-2hVYIgnA2G5i50ln7sRSPg=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ4jSyxuG15eGiD7ls3Jlqzrv9lFs-gY1Sgve6kGX19tqOuQOviOkkAAgugQEogd0513_ssKhG-2hVYIgnA2G5i50ln7sRSPg=s1600-rw-v1" alt="Nádobí jako po svatbě" /> </a>
+           
+           
+                    <div class="description">Nádobí jako po svatbě</div>
+        </div>
+        <div class="photo">
+       
+        <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYTpRVugse5EqpDd9UZ9d7iTTCcyVXQ4TN6_EsyzolQezFzi4ZCztBRbZT9t654wesrpA2tyGbxbfoUB05O2BMIrXOPFpcPno=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYTpRVugse5EqpDd9UZ9d7iTTCcyVXQ4TN6_EsyzolQezFzi4ZCztBRbZT9t654wesrpA2tyGbxbfoUB05O2BMIrXOPFpcPno=s1600-rw-v1" alt="Galeje" /> </a>
+       
+       
+            <div class="description">Galeje</div>
+        </div>
+        <div class="photo">
+       
+        <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihaf4i1U-siRkHu8rIjeWIKbc4Pcu-JxyNkAzto3cb0FQKnazrQ4544QbuMGKRsd2cFitWGwZUlODfvMHBqG_TMp4ED2YkUWpiM=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaf4i1U-siRkHu8rIjeWIKbc4Pcu-JxyNkAzto3cb0FQKnazrQ4544QbuMGKRsd2cFitWGwZUlODfvMHBqG_TMp4ED2YkUWpiM=s1600-rw-v1" alt="Všechno za vás vyžehlím<" /> </a>
+       
+       
+            <div class="description">Všechno za vás vyžehlím</div>
+        </div>
+        <div class="photo">
+       
+        <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYnVlsM1obC7uXKyGddRd0q2h2_MUH77-yg8UG_JdLQfYlZRvahdTWhDUTziYwxcVPulV21mdu1pFXuDo5Tev_zDT6i9Aw5_Q=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYnVlsM1obC7uXKyGddRd0q2h2_MUH77-yg8UG_JdLQfYlZRvahdTWhDUTziYwxcVPulV21mdu1pFXuDo5Tev_zDT6i9Aw5_Q=s1600-rw-v1" alt="Zúčtování" /> </a>
+       
+                    <div class="description">Zúčtování</div>
+        </div>
+        <div class="photo">
+       
+        <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1tEDCo-nWkfmh3HS_vyUg73sw7dKPK4If63cfQzIYPdNEZUFU_kVWewZOjOBYFCSj2BFghlDQecQPtf83OEeQ7fI_zH_GrA=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1tEDCo-nWkfmh3HS_vyUg73sw7dKPK4If63cfQzIYPdNEZUFU_kVWewZOjOBYFCSj2BFghlDQecQPtf83OEeQ7fI_zH_GrA=s1600-rw-v1" alt="Bez vodítka"/> </a>
+       
+           
+            <div class="description">Bez vodítka</div>
+        </div>
+        <div class="photo">
+       
+        <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYJccwRkirHAOXb_UsC2PCECG81VVdijuNoZIQN161JxAG3e0buB6aN51kpYr-q_-8rKSxkBnB6gf8xy0pYBkB66sHXIi8UCQg=s1600-rw-v1?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYJccwRkirHAOXb_UsC2PCECG81VVdijuNoZIQN161JxAG3e0buB6aN51kpYr-q_-8rKSxkBnB6gf8xy0pYBkB66sHXIi8UCQg=s1600-rw-v1" alt="Ruce"/> </a>
+       
+            <div class="description">Ruce</div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adam Ohlídal. Všechna práva vyhrazena.</p>
+            <p>
+                <a href="https://www.instagram.com/adam.ohlidal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://accounts.snapchat.com/accounts/snapcodes" target="_blank"><i class="fab fa-snapchat"></i></a>
+            </p>
+            <p>Kontakt: <a href="mailto:adam.ohlidal@gmail.com">adam.ohlidal@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
